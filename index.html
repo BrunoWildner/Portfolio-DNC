@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ab69f7524d.js" crossorigin="anonymous"></script>
+    <title>Portfólio</title>
+    <style>
+        body{
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+        .container{
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 1fr;
+        }
+        #header{
+            font-family: poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 42px;
+            text-decoration-line: underline;
+            color: #070F18;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        #menu{
+            text-align: right;
+            margin-top: 49px;
+        }
+        #menu ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        #menu li{
+            display: inline-block;
+            margin-left: 20px;
+            font-family: poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: #070F18;
+        }
+        a{
+            color:#070F18;
+            text-decoration: none;
+        }
+        #buttoncta{
+            background-color: #1f7ccf;
+            border-radius: 50px;
+            font-family: poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: #FFFFFF;
+            padding: 10px 25px 10px 25px;
+        }
+        p.gray{
+            font-family: poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 32px; 
+            color: #575455;
+        }
+        #headercta h1{
+            font-family: poppins;
+            font-style: normal;
+            font-weight:bold;
+            font-size: 45px;
+        }
+        #headerimg{
+            margin-left: 42px;
+        }
+        #headerimg img{
+            border-radius: 5%;
+            width: 100%;
+        }
+        .headerLogo{
+            text-align: center;
+        }
+        .headerLogo img{
+            width: 30%;
+            margin-top: 0px;
+        }
+        #clients{
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        #headerClientText{
+            font-family: poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px; 
+            color: #575455;
+            margin-top: 15px;
+            margin-bottom: 50px;
+        }
+        h2.red{
+            font-family: poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px; 
+            color: #F75C4E;
+        }
+        h1.black{
+            font-family: poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 54px; 
+            margin-top: 0;
+            color: #000000;
+        }
+        .textCenter{
+            text-align: center;
+            font-size: xx-large;
+        }
+        i{
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+        #consultoria .fa-solid{
+            color: #1f7ccf;
+        }
+        #email .fa-solid{
+            color: #F75C4E;
+        }
+        #site .fa-solid{
+            color: #eb8d09e3;
+        }
+        #services .textCenter h3{
+            font-family: poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px; 
+            text-align: center;
+            margin-top: 0;
+            color: #000000;  
+        }
+        #contactImg img{
+            width: 93%;
+            border-radius: 5%;
+        }
+        #contactForm{
+            margin-left: 75px;
+            text-align: left;
+        }
+        #contact{
+            margin-top: 100px;
+        }
+        #services{
+            text-align: center;
+        }
+        #contactForm input{
+            font-family: poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px; 
+            color: #575455;
+            background-color: #f5f6fb;
+            border-radius: 50px;
+            border: 0;
+            width: 70%;
+            padding: 15px 25px 15px 25px;
+        }
+        #contactForm button{
+            background-color: #1f7ccf;
+            border-radius: 50px;
+            font-family: poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: #FFFFFF;
+            padding: 10px 25px 10px 25px;
+            border: 0;
+        }
+        #portfolioTitle{
+            margin-top: 110px;
+        }
+        .portfolioImg img{
+            width: 340px;
+            height: 225px;
+            border-radius: 5%;
+            margin-top: 30px;
+            margin-right: 30px;
+            margin-bottom: 30px;
+            margin-left: 0px;
+        }
+        .portfolioImg{
+            display:grid;
+            grid-template-columns:auto auto auto;
+        }  
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+            Portfólio
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="#services"> Meus Serviços</a></li>
+                <li><a href="#contact"> Contato</a></li>
+                <li><a href="#portfolioTitle">Portfólio</a></li>
+            </ul>
+        </div>
+    </div>  
+    <div class="container">
+        <div id="headercta">
+            <h1>
+                Olá, meu nome<br>
+                é Maria
+            </h1>
+            <p class="gray">
+                Sou programadora e gostaria de apresentar meu<br>
+                trabalho pra você por meio deste portfólio
+            </p>
+            <a id="buttoncta" href="">Meus Serviços</a>
+        </div>
+        <div id="headerimg">
+            <img src="img/header.jpg">
+        </div>
+    </div>
+    <div class="container" id="clients">
+        <div id="headerClientText">
+            Alguns dos<br>
+            meus clientes
+        </div>
+        <div class="headerLogo">
+            <img src="img/cliente1.png">
+        </div>
+        <div class="headerLogo">
+            <img src="img/cliente1.png">
+        </div>
+        <div class="headerLogo">
+            <img src="img/cliente1.png">
+        </div>
+    </div>
+    <div class="container">
+        <div id="services">
+        <h2 class="red">Conheça</h2>
+        <h1 class="black">Meus Serviços</h1>
+    </div>
+    </div>
+    <div class="container" id="services">
+        <div class="textCenter" id="consultoria">
+            <i class="fa-solid fa-briefcase"></i>
+            <h3>Consultoria</h3>
+            <p class="gray">Te ajudo a organizar sua empresa<br>
+               e melhorar seus resultados.
+            </p>
+        </div>
+        <div class="textCenter" id="email">
+            <i class="fa-solid fa-paper-plane"></i>
+            <h3>E-mail Marketing</h3>
+            <p class="gray">Gerenciar campanhas é difícil?<br>
+                Conte comigo para te ajudar.
+            </p>
+        </div>
+        <div class="textCenter" id="site">
+            <i class="fa-solid fa-globe"></i>
+            <h3>Criação de Sites</h3>
+            <p class="gray">Desenvolvo seu site inteiro<br>
+                do zero e te entrego prontinho.
+            </p>
+        </div>
+    </div>
+    <div class="container" id="contact">
+        <div id="contactImg">
+            <img src="img/contact.jpeg">
+        </div>
+        <div id="contactForm">
+            <h2 class="red">Economize seu tempo</h2>
+            <h1 class="black">Ganhe mais dinheiro</h1>
+            <p  class="gray">
+                Digite aqui seu endereço de e-mail. Eu entrarei<br>
+                em contato para fornecer um diagnóstico gratuito
+            </p>
+            <form action="https://formspree.io/f/xlezqdqo" method="post" >
+                <p><input placeholder="Seu e-mail" type="text" required="required" name="contactEmail"></p>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <div class="container" id="portfolioTitle">
+        <div>
+            <h2 class="red">Conheça o meu</h2>
+            <h1 class="black">Portfólio</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="portfolioImg">
+            <div>
+                <img src="img/portfolio2.jpg">
+            </div>
+            <div>
+                <img src="img/portfolio3.jpeg">
+            </div>
+            <div>
+                <img src="img/portfolio4.png">
+            </div>
+        </div>            
+    </div>
+    <h1>
+        Teste Github
+    </h1>    
+</body>
+</html>
